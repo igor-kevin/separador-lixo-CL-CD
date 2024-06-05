@@ -1,5 +1,5 @@
-
 image: python:3.11
+name: CI
 
 on:
   push:
@@ -9,6 +9,8 @@ on:
 
 jobs:
   run_tests:
-    scripts:
-      - "pip install -r requirements.txt"
-
+    steps:
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
