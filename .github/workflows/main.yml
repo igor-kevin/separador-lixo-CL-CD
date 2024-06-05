@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Clonar o repositório
-        run: git clone ${{ github.repository_url }} .
+        uses: actions/checkout@v2
 
       - name: Configurar Python
         run: |
@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Clonar o repositório
-        run: git clone ${{ github.repository_url }} .
+        uses: actions/checkout@v2
 
       - name: Logar no Docker Hub
         run: |
