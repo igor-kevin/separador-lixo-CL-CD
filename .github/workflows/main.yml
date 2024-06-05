@@ -7,6 +7,8 @@ on:
   pull_request:
     branches: [main]
 
-run_tests:
-  scripts:
-    - "pip install -r requirements.txt"
+jobs:
+  run_tests:
+    scripts:
+      - "pip install -r requirements.txt"
+
