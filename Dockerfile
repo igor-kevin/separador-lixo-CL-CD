@@ -7,8 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY app.py ./
 COPY mymodel.keras ./
-COPY readme.md ./
-
 
 EXPOSE 5000
 
